@@ -16,6 +16,8 @@ contextBridge.exposeInMainWorld(
   'electron',
   {
     addWindow: () => ipcRenderer.send('add-window'),  // 在渲染进程触发新建一个窗口
-    hahaMessage: () => ipcRenderer.invoke('send-Haha') // 在主进程发送消息给渲染进程，invoke（Returns Promise<any> - Resolves 主进程返回值）
+    hahaMessage: () => ipcRenderer.invoke('send-Haha'), // 在主进程发送消息给渲染进程，invoke（Returns Promise<any> - Resolves 主进程返回值）
+    switchTheme: () => ipcRenderer.send('switch-theme', ['dark']), // 切换主题颜色
+    showAbout: (options) => ipcRenderer.send('about-us',[options]), // 点击【关于】按钮，弹出对话框
   }
 )

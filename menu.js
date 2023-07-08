@@ -20,4 +20,4 @@ const template = [
   },
 ]
 const menu = Menu.buildFromTemplate(template);
-Menu.setApplicationMenu(menu);
+Menu.setApplicationMenu(null); // 隐藏默认菜单
