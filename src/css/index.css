@@ -1,0 +1,23 @@
+.main {
+  /* -webkit-app-region: drag; */
+}
+.nav {
+  padding: 0;
+  margin: 0;
+  height: 45px;
+  padding-left: 15px;
+  background-color: antiquewhite;
+  line-height: 45px;
+  color: lightslategrey;
+  font-size: 18px;
+}
+
+.nav>ul {
+  padding-left: 0px;
+}
+
+.nav>ul>li {
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+}

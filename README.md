@@ -1,0 +1,1 @@
+1. 安装electron命令：`cnpm install electron --save-dev`
